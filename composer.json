@@ -1,5 +1,5 @@
 {
-    "name":        "flipkod/faq-bundle",
+    "name":        "imsmoking/help-bundle",
     "type":        "symfony-bundle",
     "description": "Symfony FAQ bundle",
     "keywords":    ["php", "symfony", "bundle", "symfony-bundle", "flipkod", "faq"],
