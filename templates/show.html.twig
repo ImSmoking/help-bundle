@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+    {% for index, category in categories %}
+        <div>
+            <h2> {{ category.getHeadline() }} </h2>
+            {% for indexQ, question in category.getQuestion() %}
+                <h3>{{ question.getHeadline() }}</h3>
+                <p>{{ question.getBody() }}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}

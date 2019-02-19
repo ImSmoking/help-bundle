@@ -1,0 +1,30 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+fk_help_show:
+  path: /help/show
+  controller: App\Controller\HelpController::showAction
+
+fk_help_category_create:
+  path: /help/category/create
+  controller: App\Controller\HelpController::createEditCategoryAction
+
+fk_help_category_edit:
+  path: /help/category/edit/{category_id}
+  controller: App\Controller\HelpController::createEditCategoryAction
+
+fk_help_question_create:
+  path: /help/question/create
+  controller: App\Controller\HelpController::createEditQuestionAction
+
+fk_help_question_edit:
+  path: /help/question/edit/{question_id}
+  controller: App\Controller\HelpController::createEditQuestionAction
+
+
+fk_help_save:
+  path: /help/{type}/save/{id}
+  controller: App\Controller\HelpController::saveAction
+  defaults:
+    id: null

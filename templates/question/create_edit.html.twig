@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    {{ form_start(questionForm, {'attr':{'class': 'ajaxify_request'}}) }}
+    <div>
+
+        <div>
+            <label>Title</label>
+            {{ form_widget(questionForm.headline) }}
+        </div>
+        <div>
+            <label>Category</label>
+            {{ form_widget(questionForm.category_id) }}
+        </div>
+        <div>
+            <label>Visible</label>
+            {{ form_widget(questionForm.body) }}
+        </div>
+
+        <div>
+            <label>Order</label>
+            {{ form_widget(questionForm.rank) }}
+        </div>
+
+    </div>
+
+    <div>
+        <div>
+            {{ form_widget(questionForm.save) }}
+        </div>
+    </div>
+    {{ form_rest(questionForm) }}
+    {{ form_end(questionForm) }}
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('ajaxify') }}
+    {% endblock %}
+{% endblock %}
