@@ -3,6 +3,7 @@
     "type":        "symfony-bundle",
     "description": "Symfony FAQ bundle",
     "keywords":    ["php", "symfony", "bundle", "symfony-bundle", "flipkod", "faq"],
+    "homepage":    "https://github.com/ImSmoking/help-bundle",
     "license": "MIT",
     "authors": [
         {
